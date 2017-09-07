@@ -60,12 +60,12 @@ PUT /v1/events/<event-id>
 ### Parameters
 |           Name         |          Description           |   Required/Optional   |
 |------------------------|--------------------------------|-----------------------|
-|     event[name]        |          Name of Event         |     Required
-|     event[description] |       Description of Event     |     Required   
-|     event[location]    |        Location of Event       |     Required     
-|     event[start_date]  |Start Date of Event [yyyy-mm-dd]|     Required     
-|     event[end_date]    | End Date of Event [yyyy-mm-dd] |     Required
-|     event[status]      | Status draft or published      |     Optional
+|     event[name]        |          Name of Event         |     Required if status is published |
+|     event[description] |       Description of Event     |     Required if status is published  | 
+|     event[location]    |        Location of Event       |     Required if status is published   |
+|     event[start_date]  |Start Date of Event [yyyy-mm-dd]|     Required if status is published    | 
+|     event[end_date]    | End Date of Event [yyyy-mm-dd] |     Required if status is published |
+|     event[status]      | Status draft or published      |     Optional |
 
 
 
